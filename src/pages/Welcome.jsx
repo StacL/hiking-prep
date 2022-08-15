@@ -1,24 +1,39 @@
 import React from "react";
-import "../styles/welcome.css";
-import hiker from "../images/manHiking.jpg"
+import hiker from "../images/manHiking.jpg";
+import { Link } from "react-router-dom";
+import WaterfallVideo from "../images/background/waterfall.mp4"
+
 
 export default function Welcome() {
   return (
-    <div className="page welcome">
-      <div className="welcome--text">
-        <h1>Hiking Buddy</h1>
-        <h2>Planing to explore, made easy</h2>
-        <p>Planning for a hike? A day trip? A backpacking trip? </p>
-        <p>
-          We got you. This is a simple planner that lets you prepare for all
-          your outdoor adventures--no matter if its 1 hour or 1 week.
-        </p>
-        <div className="welcome--bottomButtons">
-          <p>Sign Up</p>
-          <p>Login</p>
+    <>
+      <div class="hero min-h-screen">
+        <video
+          class="object-cover w-full h-full brightness-25"
+          src={WaterfallVideo}
+          autoPlay
+          loop
+          muted
+        />
+        <div class="hero-content flex-col lg:flex-row-reverse lg:pr-20">
+          <img src={hiker} class="max-w-sm rounded-lg shadow-2xl md:max-w-xl" />
+          <div class=" p-5 flex flex-col items-center lg:p-10">
+            <h1 class="text-center text-5xl font-bold lg:text-left">
+              Planing to explore, made easy!
+            </h1>
+
+            <p class="text-center py-8 lg:text-left">
+              A simple planner that lets you prepare for all your outdoor
+              adventures--no matter if its 1 hour or 1 week. With real weather
+              risks and packing advice, we keep you safe on the trails.
+            </p>
+
+            <Link to="/signup">
+              <button class="btn btn-primary">Sign Up</button>
+            </Link>
+          </div>
         </div>
       </div>
-      <img className="welcome--img" src={hiker} alt="hiker exploring a trail" />
-    </div>
+    </>
   );
 }
