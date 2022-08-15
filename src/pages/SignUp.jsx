@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import WaterfallVideo from "../images/background/waterfall.mp4"
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -61,7 +62,7 @@ const Signup = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="border border-blue-500 bg-blue-600 hover:bg-blue-500 p-4 m-2 w-full">
+        <button className="btn btn-primary w-full mt-4">
           Sign Up
         </button>
       </form>

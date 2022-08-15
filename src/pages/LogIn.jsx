@@ -33,7 +33,7 @@ const LogIn = () => {
           </Link>
         </p>
       </div>
-      
+
       {/* User Form */}
       <form onSubmit={handleSubmit}>
         {/* Email */}
@@ -61,9 +61,7 @@ const LogIn = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="border border-blue-500 bg-blue-600 hover:bg-blue-500 p-4 m-2 w-full">
-          Log in
-        </button>
+        <button className="btn btn-primary w-full mt-4">Log in</button>
       </form>
     </div>
   );
