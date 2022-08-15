@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/welcome.css";
-import background from "../images/background/backgroundCanyon.jpg";
+import hiker from "../images/manHiking.jpg"
 
 export default function Welcome() {
   return (
@@ -14,11 +14,11 @@ export default function Welcome() {
           your outdoor adventures--no matter if its 1 hour or 1 week.
         </p>
         <div className="welcome--bottomButtons">
-          <p>Signup</p>
+          <p>Sign Up</p>
           <p>Login</p>
         </div>
       </div>
-      <img className="welcome--img" src={background} alt="canyon" />
+      <img className="welcome--img" src={hiker} alt="hiker exploring a trail" />
     </div>
   );
 }

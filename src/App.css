@@ -4,8 +4,8 @@
     --goldGreen:#7A765C;
     --darkNavy:#2C3D55;
     --darkGreenTransparent:rgba(39, 54, 10, 0.9);
-    --darkNavyTransparent:rgba(44, 61, 85, 0.9);;
-    font-size: 0.625em;
+    --darkNavyTransparent:rgba(44, 61, 85, 0.9);
+    /* font-size: 0.625em; */
 }
 
 * {
@@ -13,6 +13,7 @@
     margin: 0 auto;
 }
 
+/* 
 h1 {
     font-family: 'Vollkorn', serif;
     font-size: 4.8rem;
@@ -30,4 +31,4 @@ p {
 
 .page {
     padding: 35px;
-}
+} */
