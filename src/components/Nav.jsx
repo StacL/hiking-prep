@@ -1,7 +1,6 @@
 import React from 'react'
-import "../styles/nav.css"
 
-export default function nav() {
+export default function Nav() {
   return (
     <div>nav</div>
   )
