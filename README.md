@@ -9,7 +9,9 @@ This is a simple guide that lets you prepare for all your outdoor adventures--no
 `npm start`
 - Your own firebase authentication will be needed in an .env.local file, inside the root directory
 
-## User Walkthrough
+## User Stories Walkthrough
+Here is a walk through of the user stories.
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Features
 - User authentication
