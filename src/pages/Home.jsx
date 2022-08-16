@@ -1,33 +1,32 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { UserAuth } from "../context/AuthContext";
-import WeatherCard from "../components/WeatherCard";
+import WeatherCard from "../components/Dashboard/WeatherCard";
+import Nav from "../components/Nav";
+import WaterfallVideo from "../images/background/waterfall.mp4";
+import DailyChecklist from "../components/Dashboard/DailyChecklist";
 
 const Home = () => {
-  const { user, logout } = UserAuth();
-  const navigate = useNavigate();
-
-  // Log out user and return to Welcome Page
-  const handleLogout = async () => {
-    try {
-      await logout();
-      navigate("/");
-      console.log("You are logged out.");
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
-
-
   return (
-    <div className="max-w-[600px] mx-auto my-12 p-4">
-      <WeatherCard/>
-      
-      {/* Log out button */}
-      <button onClick={handleLogout} className="border px-6 py-2 my-4">
-        Logout
-      </button>
-    </div>
+    <>
+      <Nav />
+      <video
+        className="object-cover w-full h-28 brightness-25"
+        src={WaterfallVideo}
+        autoPlay
+        loop
+        muted
+      />
+      <div className="min-h-[75vh] p-5 bg-primary flex flex-col w-full lg:flex-row">
+        <div className="">
+          <WeatherCard />
+        </div>
+
+        <div className="divider m-4 lg:divider-horizontal"></div>
+
+        <div className="">
+          <DailyChecklist />
+        </div>
+      </div>
+    </>
   );
 };
 

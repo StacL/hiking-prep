@@ -3,16 +3,14 @@ import Home from "./pages/Home";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
-import WelcomeNav from "./components/WelcomeNav"
 
 import { AuthContextProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <WelcomeNav/>
       <AuthContextProvider>
         <Routes>
           <Route path="/" element={<Welcome />} />
@@ -24,6 +22,7 @@ function App() {
         </ProtectedRoute>}/> */}
         </Routes>
       </AuthContextProvider>
+      <Footer/>
     </>
   );
 }
