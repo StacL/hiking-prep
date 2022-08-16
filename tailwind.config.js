@@ -5,13 +5,13 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#3f6212",
+          primary: "#424632",
 
-          secondary: "#0c4a6e",
+          secondary: "#707F9B",
 
-          accent: "#713f12",
+          accent: "#A68C2B",
 
-          neutral: "#3f6212",
+          neutral: "#292524",
 
           "base-100": "#292524",
 
